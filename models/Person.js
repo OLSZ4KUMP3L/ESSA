@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const uniqueValidator = require('mongoose-unique-validator')
 
-const url = 'mongodb+srv://Mateusz:3tSnHB4SMi4Zeopk@part3.2ghaiht.mongodb.net/?retryWrites=true&w=majority&appName=Part3'
+const url = 'mongodb+srv://Mateusz:<3tSnHB4SMi4Zeopk>@part3.2ghaiht.mongodb.net/'
 
 mongoose.connect(url)
   .then(result => {
