@@ -88,9 +88,10 @@ app.put('/api/persons/:id', (request, response, next) => {
     .catch(error => next(error))
 })
 
-app.delete('/api/persons/:id', (request, response, next) => {
+app.delete('/api/persons/:_id', (request, response, next) => {
+  console.log("xd")
   Person
-    .findOneAndDelete({ id: request.params.id })
+    .findOneAndDelete({ _id: request.params._id })
     .then(result => {
       response.status(204).end()
     })
